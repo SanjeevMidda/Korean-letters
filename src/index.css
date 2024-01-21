@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  display: flex;
+  height: 100dvh;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.title {
+  width: 100%;
+  font-size: 100px;
+}
+
+.vowels,
+.consonants {
+  animation: opacity 1s;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.consonants h4 {
+  font-size: 50px;
+}
+
+h1,
+h4 {
+  margin: 10px;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  /* border: 1px solid black; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
